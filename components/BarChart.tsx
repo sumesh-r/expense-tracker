@@ -76,7 +76,7 @@ const BarChart = ({ budgetInfo, expensesTotal }: Props) => {
               className="h-full cursor-pointer text-transparent hover:text-gray4 font-semibold"
             >
               <p className="absolute h-4 w-full my-0 top-[-1.5rem] left-0 text-center">
-                ${totalBudgetExpense[key]} - {key}
+                ₹{totalBudgetExpense[key]} - {key}
               </p>
             </div>
           );

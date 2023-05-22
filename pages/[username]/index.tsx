@@ -73,14 +73,14 @@ const landingPage = () => {
       </h1>
       <div className="w-[80%] h-[20vh] md:h-[15rem] mt-[45%] md:mt-[28vh] bg-gray bg-opacity-[95%] rounded-sm shadow-md">
         <div className="flex flex-col xl:items-center md:gap-4 my-4 mx-4 text-gray2">
-          <span className="md:text-[2rem]">THIS MONTH</span>
+          <span className="md:text-[2rem]">Last Transaction</span>
           <span className="text-4xl md:text-[4rem] text-gray4">
             ₹{expenses ? totalExpenses(expenses) : 0}
           </span>
         </div>
         <div className="mx-4 pt-4 md:pt-12">
           {expenses && budgets && (
-            <ProgressBar progressPercent={ calcPercent(expenses, budgets)} />
+            <ProgressBar progressPercent={calcPercent(expenses, budgets)} />
           )}
         </div>
       </div>

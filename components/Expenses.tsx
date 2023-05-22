@@ -30,7 +30,7 @@ const Expenses = ({ expenses }: DocumentData) => {
             </span>
           </div>
           <div className="flex justify-center gap-2 md:gap-8 items-center">
-            <span className="font-semibold">${expense?.amount}</span>
+            <span className="font-semibold">₹{expense?.amount}</span>
             <RiDeleteBin5Line
               onClick={() => removeExpense(expense.expenseId, expense.budgetId)}
               className="text-orange1 md:hover:scale-110 md:transition-transform md:cursor-pointer"
